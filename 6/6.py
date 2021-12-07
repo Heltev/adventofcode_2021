@@ -22,8 +22,6 @@ for day in range(256):
     for element in fish_dict:
         if element+1 in fish_dict:
             fish_dict[element] = fish_dict[element+1]
-        if element+1 not in fish_dict:
-            fish_dict[element]=0
     fish_dict[8]=ready
     fish_dict[6]+=ready
 sum=0
