@@ -4,23 +4,6 @@ def readfile():
       for line in f:
         lines.append(line.strip().split('|'))
     return lines
-#lines=['be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe','edbfga begcd cbg gc gcadebf fbgde acbgfd abcde gfcbed gfec | fcgedb cgb dgebacf gc']
-#fgaebd cg bdaec gdafb agbcfd gdcbef bgcad gfac gcb cdgabef |
-#cg cg fdcagb cbg
-#fbegcd cbd adcefb dageb afcb bc aefdc ecdab fgdeca fcdbega |
-#efabcd cedba gadfec cb
-#aecbfdg fbg gf bafeg dbefa fcge gcbea fcaegb dgceab fcbdga |
-#gecf egdcabf bgf bfgea
-#fgeab ca afcebg bdacfeg cfaedg gcfdb baec bfadeg bafgc acf |
-#gebdcfa ecba ca fadegcb
-#dbcfg fgd bdegcaf fgec aegbdf ecdfab fbedc dacgb gdcebf gf |
-#cefg dcbef fcge gbcadfe
-#bdfegc cbegaf gecbf dfcage bdacg ed bedf ced adcbefg gebcd |
-#ed bcgafe cdgba cbgef
-#egadfb cdbfeg cegd fecab cgb gbdefca cg fgcdab egfdb bfceg |
-#gbdfcae bgc cg cgb
-#gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc |
-#fgae cfgab fg bagce
 output=[]
 def part1():
     targets_found=0
@@ -146,29 +129,6 @@ def part2():
             output_string += element
         output_answer.append(int(output_string))
     print(sum(output_answer))
-
+part1()
 part2()
-#for char in ['a','b','c','d','e','f','g']:
-#    print(char)
-#lines=readfile()
-#input_codes = [line[0].split(' ')[:-1] for line in lines]
-#dec={}
-##print(input_codes)
-#dec['t'] = get_top('abd','ab')
-#dec['br'],dec['bl'] = get_bottom_sides(input_codes[0])
-#dec['tl']=get_top_left(input_codes[0])
-#dec['tr'] = get_top_right(input_codes[0],dec)
-#dec['m'] = get_middle(input_codes[0],dec)
-#dec['b'] = get_bottom(dec)
-#d=decode_line(['acedgfb', 'cdfbe', 'gcdfa', 'fbcad', 'dab', 'cefabd', 'cdfgeb', 'eafb', 'cagedb', 'ab'])
-#c = ['cdfeb', 'fcadb', 'cdfeb', 'cdbaf']
-#b=[]
-#e=code_to_number(d)
-#w=''
-#for l in c:
-#    for x in range(0,10):
-#        if strings_equal(e[str(x)],l) == True:
-#            b.append(str(x))
-#for element in b:
-#    w+=element
-#print(int(w)+1)
+
